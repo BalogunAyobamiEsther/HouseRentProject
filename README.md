@@ -23,10 +23,7 @@ This project builds a predictive model to estimate house prices and identify key
 ## Data Preparation
 - Handle missing values  
 - Correct data types  
-- Feature engineering:  
-
-```python
-TotalArea = BasementArea + FirstFloorArea + SecondFloorArea
+- Feature engineering
 
 ---
 
