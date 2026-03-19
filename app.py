@@ -6,6 +6,27 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+from sklearn.base import BaseEstimator, TransformerMixin
+from sklearn.preprocessing import LabelEncoder
+
+class MultiColumnLabelEncoder(BaseEstimator, TransformerMixin):
+    def __init__(self, columns=None):
+        self.columns = columns
+        self.encoders = {}
+
+    def fit(self, X, y=None):
+        for col in self.columns:
+            le = LabelEncoder()
+            le.fit(X[col])
+            self.encoders[col] = le
+        return self
+
+    def transform(self, X):
+        X_copy = X.copy()
+        for col, le in self.encoders.items():
+            X_copy[col] = le.transform(X_copy[col])
+        return X_copy
+
 # -------------------------------
 # 1. Load the saved pipeline
 # -------------------------------
