@@ -42,3 +42,17 @@ Top predictors:
 -TotalArea (total usable space)
 -GarageCars
 -GrLivArea
+
+---
+
+## Live Demo
+👉 [House Rent Prediction App](https://houserentproject-bkbfiv3da4pfqqj87pn2rm.streamlit.app/)
+
+---
+
+## 📁 Files in this Repository
+- `app.py` → Streamlit web app
+- `house_rent_model.pkl` → Trained model pipeline
+- `House_Rent_Prediction.ipynb` → Full project notebook
+- `train.csv` → Dataset used
+- `requirements.txt` → Dependencies
