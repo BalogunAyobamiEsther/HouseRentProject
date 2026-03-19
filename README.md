@@ -29,16 +29,23 @@ This project builds a predictive model to estimate house prices and identify key
 
 ## Model
 
--Linear Regression
--Decision Tree Regressor
--Random Forest Regressor
+- Linear Regression
+- Decision Tree Regressor
+- Random Forest Regressor
 
 ---
 
 ## Feature Importance
 
 Top predictors:
--OverallQual (house quality)
--TotalArea (total usable space)
--GarageCars
--GrLivArea
+- OverallQual (house quality)
+- TotalArea (total usable space)
+- GarageCars
+- GrLivArea
+
+---
+
+## Live Demo
+👉 [House Price Prediction App](https://houserentproject-bkbfiv3da4pfqqj87pn2rm.streamlit.app/)
+
+
