@@ -35,8 +35,8 @@ def user_input_features():
     BsmtFinSF2 = st.number_input("Basement Finished SF 2", min_value=0, max_value=1474, value=0)
     BsmtUnfSF = st.number_input("Basement Unfinished SF", min_value=0, max_value=2336, value=400)
     TotalBsmtSF = st.number_input("Total Basement SF", min_value=0, max_value=6110, value=900)
-    `1stFlrSF` = st.number_input("1st Floor SF", min_value=334, max_value=4692, value=1000)
-    `2ndFlrSF` = st.number_input("2nd Floor SF", min_value=0, max_value=2065, value=500)
+    firstFlrSF = st.number_input("1st Floor SF", min_value=334, max_value=4692, value=1000)
+    secondFlrSF = st.number_input("2nd Floor SF", min_value=0, max_value=2065, value=500)
     LowQualFinSF = st.number_input("Low Quality Finished SF", min_value=0, max_value=572, value=0)
     GrLivArea = st.number_input("Above Grade Living Area", min_value=334, max_value=5642, value=1500)
     BsmtFullBath = st.number_input("Basement Full Bath", min_value=0, max_value=3, value=1)
@@ -52,7 +52,7 @@ def user_input_features():
     WoodDeckSF = st.number_input("Wood Deck SF", min_value=0, max_value=736, value=0)
     OpenPorchSF = st.number_input("Open Porch SF", min_value=0, max_value=547, value=0)
     EnclosedPorch = st.number_input("Enclosed Porch", min_value=0, max_value=552, value=0)
-    `3SsnPorch` = st.number_input("3-Season Porch", min_value=0, max_value=508, value=0)
+    threeSsnPorch = st.number_input("3-Season Porch", min_value=0, max_value=508, value=0)
     ScreenPorch = st.number_input("Screen Porch", min_value=0, max_value=480, value=0)
     PoolArea = st.number_input("Pool Area", min_value=0, max_value=800, value=0)
     MiscVal = st.number_input("Miscellaneous Value", min_value=0, max_value=15500, value=0)
@@ -110,13 +110,13 @@ def user_input_features():
         'BsmtQual': BsmtQual, 'BsmtCond': BsmtCond, 'BsmtExposure': BsmtExposure, 'BsmtFinType1': BsmtFinType1,
         'BsmtFinSF1': BsmtFinSF1, 'BsmtFinType2': BsmtFinType2, 'BsmtFinSF2': BsmtFinSF2, 'BsmtUnfSF': BsmtUnfSF,
         'TotalBsmtSF': TotalBsmtSF, 'Heating': Heating, 'HeatingQC': HeatingQC, 'CentralAir': CentralAir,
-        'Electrical': Electrical, '1stFlrSF': `1stFlrSF`, '2ndFlrSF': `2ndFlrSF`, 'LowQualFinSF': LowQualFinSF,
+        'Electrical': Electrical, '1stFlrSF': firstFlrSF, '2ndFlrSF': secondFlrSF, 'LowQualFinSF': LowQualFinSF,
         'GrLivArea': GrLivArea, 'BsmtFullBath': BsmtFullBath, 'BsmtHalfBath': BsmtHalfBath, 'FullBath': FullBath,
         'HalfBath': HalfBath, 'BedroomAbvGr': BedroomAbvGr, 'KitchenAbvGr': KitchenAbvGr, 'KitchenQual': KitchenQual,
         'TotRmsAbvGrd': TotRmsAbvGrd, 'Functional': Functional, 'Fireplaces': Fireplaces, 'GarageType': GarageType,
         'GarageYrBlt': YearBuilt, 'GarageFinish': GarageFinish, 'GarageCars': GarageCars, 'GarageArea': GarageArea,
         'GarageQual': GarageQual, 'GarageCond': GarageCond, 'PavedDrive': PavedDrive, 'WoodDeckSF': WoodDeckSF,
-        'OpenPorchSF': OpenPorchSF, 'EnclosedPorch': EnclosedPorch, '3SsnPorch': `3SsnPorch`, 'ScreenPorch': ScreenPorch,
+        'OpenPorchSF': OpenPorchSF, 'EnclosedPorch': EnclosedPorch, '3SsnPorch': threeSsnPorch, 'ScreenPorch': ScreenPorch,
         'PoolArea': PoolArea, 'MiscVal': MiscVal, 'MoSold': MoSold, 'YrSold': YrSold, 'SaleType': 'WD', 'SaleCondition': 'Normal',
         'TotalBathrooms': TotalBathrooms, 'HouseAge': HouseAge, 'TotalArea': TotalArea
     }
