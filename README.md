@@ -46,6 +46,6 @@ Top predictors:
 ---
 
 ## Live Demo
-👉 [House Rent Prediction App](https://houserentproject-bkbfiv3da4pfqqj87pn2rm.streamlit.app/)
+👉 [House Price Prediction App](https://houserentproject-bkbfiv3da4pfqqj87pn2rm.streamlit.app/)
 
 
