@@ -33,10 +33,10 @@ class MultiColumnLabelEncoder(BaseEstimator, TransformerMixin):
 with open("house_rent_model.pkl", "rb") as file:
     pipeline = pickle.load(file)
 
-st.title("🏠 House Rent Prediction App")
+st.title("🏠 House Price Prediction App")
 
 st.write("""
-This app predicts house rent based on various property features.
+This app predicts house price based on various property features.
 """)
 
 # -------------------------------
