@@ -1,5 +1,5 @@
 # ================================
-# House Rent Prediction Streamlit App
+# House Price Prediction Streamlit App
 # ================================
 
 import streamlit as st
@@ -150,6 +150,6 @@ input_df = user_input_features()
 # -------------------------------
 # 3. Make prediction
 # -------------------------------
-if st.button("Predict Rent"):
+if st.button("Predict Price"):
     prediction = pipeline.predict(input_df)
-    st.success(f"Estimated Rent: ₦{prediction[0]:,.0f}")
+    st.success(f"Estimated Price: ₦{prediction[0]:,.0f}")
